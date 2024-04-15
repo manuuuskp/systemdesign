@@ -1,0 +1,16 @@
+Security is one of the primary features that has to be checked while developing an application.
+It is easy to build an application but to maintain it and that too the data of the user should be protected at any cost.
+
+There are many ways the data of the user can be hacked or manipulated.
+
+1.XSS attack
+    XSS - Cross Site Scripting is the injection of malacious code and by injecting the code the attacker will either get the data of the user
+    or manipulate the user to perform the action which the attacker wants.
+
+    Attacks - user sesssion hijacking, unauthorised access, taking user action keystrokes, stealing critical information
+    Mitigation:
+        1.use innerText, textContent instead of innerHTML
+        2.sanitise the input
+        3.use modern libraries
+        4.use DOMPurify
+        5.use CSP headers

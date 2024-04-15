@@ -1,0 +1,33 @@
+What is networking ?
+Basically how does the communication between two systems happen is where the networking comes into picture.
+
+how web works ?
+Whenever the user search a website, the call will be sent to the ISP which then transfers the call to the DNS(Domain Name Server),
+Where the server returns the IP address of the domain which we searched.
+
+[how does it fetches the IP address ?
+
+For example:
+www.google.com
+
+three level of matching happens.
+
+first level is with .com or .in or .org or .store etc
+
+second level is with domain name - google, facebook, unusuals, amazon etc
+
+third level is with www or document etc]
+
+once the IP address is returned, then the client will sent that to the ISP which then looks for the actual server which has this IP address,
+then the server is accessed and then the server returns the HTML, CSS and JS as the response which then will be loaded by the Browser(client)
+
+TYPES OF NETWORKING PROTOCOLS:
+1.Http - creates a TCP handshake and then sends the data in packets. data will not be lost at any cost.
+2.Http3/QUIC - just sends the data and receives the data for a quick request and response. but there is a chance that the data might be lost.
+3.Https - adds the security layer (TLS and SSL) - so that the data sent and received will be encrypted and cannot be taken.
+4.TCP(Transmission Control Protocol) - firstly the client sends the handshake invite with the ACK number. The server then responds with its own ACK number and client's ACK number plus 1.
+The client that sends the confirmation of the handshake sent by server with server sent ACK number plus 1.
+5.UDP(User DataGram Protocol) - unlike TCP, this is a connectionless communication protocol over the network. It sends the data without any estabilishing any initial connection.
+This is used for faster sending and receiving the data.
+6.SMTL(Simple Mail Transfer Protocol) - used to send and receive the mail.
+7.FTP(File Transfer Protocol) - used to send and receive the files.

